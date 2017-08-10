@@ -1,0 +1,173 @@
+<div class="container">
+	<div class="col-md-6 missions-group">
+		<!-- Tocha -->
+
+			<h4>Tocha</h4>
+			<div class="row-fluid">
+				<div class="btn-group pull-right">
+					<label class="btn btn-default" ng-model="scoreData.torch"
+						btn-radio="1">Sim</label>
+					<label class="btn btn-default" ng-model="scoreData.torch"
+						btn-radio="0">Não</label>
+				</div>
+				<p>Tocha levantada</p>
+			</div>
+
+
+		<!-- Vara de salto	 -->
+
+			<h4>Vara de Salto</h4>
+			<div class="row-fluid">
+				<div class="btn-group pull-right">
+					<label class="btn btn-default" ng-model="scoreData.pole"
+						btn-radio="2">Dois Times</label>
+					<label class="btn btn-default" ng-model="scoreData.pole"
+						btn-radio="1">Sim</label>
+					<label class="btn btn-default" ng-model="scoreData.pole"
+						btn-radio="0">Não</label>
+				</div>
+				<p>Caixa em seu devido lugar</p>
+			</div>
+
+
+		<!-- Salto Triplo -->
+			<h4>Salto Triplo</h4>
+			<div class="row-fluid">
+				<div class="btn-group pull-right">
+					<label class="btn btn-default" ng-model="scoreData.line"
+						btn-radio="3">3º</label>
+					<label class="btn btn-default" ng-model="scoreData.line"
+						btn-radio="2">2º</label>
+					<label class="btn btn-default" ng-model="scoreData.line"
+						btn-radio="1">1º</label>
+					<label class="btn btn-default" ng-model="scoreData.line"
+						btn-radio="0">Não</label>
+				</div>
+				<p>Robô parado por 3s na linha</p>
+			</div>
+			<div class="row-fluid" style="margin-top: 30px;">
+				<div class="btn-group pull-right">
+					<label class="btn btn-default" ng-model="scoreData.lineD"
+						btn-radio="2">3ºDisplay</label>
+					<label class="btn btn-default" ng-model="scoreData.lineD"
+						btn-radio="1">2ºDisplay</label>
+					<label class="btn btn-default" ng-model="scoreData.lineD"
+						btn-radio="0">1ºDisplay</label>
+					<label class="btn btn-default" ng-model="scoreData.lineD"
+						btn-radio="3">Não</label>
+				</div>
+				<p>Numero da Linha no Display</p>
+			</div>
+
+
+		<!-- Segurança -->
+		<div>
+			<h4>Segurança</h4>
+			<div class="row-fluid">
+				<div class="btn-group pull-right">
+					<label class="btn btn-default" ng-model="scoreData.swimmer"
+						btn-radio="3">Direto</label>
+					<label class="btn btn-default" ng-model="scoreData.swimmer"
+						btn-radio="2">Pela Base</label>
+					<label class="btn btn-default" ng-model="scoreData.swimmer"
+						btn-radio="1">Apenas Base</label>
+					<label class="btn btn-default" ng-model="scoreData.swimmer"
+						btn-radio="0">Não</label>
+				</div>
+				<p>Atleta resgatado</p>
+			</div>
+		</div>
+
+		<!-- Alimentos -->
+		<div>
+			<h4>Alimentos</h4>
+			<div class="row-fluid">
+				<div class="btn-group pull-right">
+					<label class="btn btn-default" ng-model="scoreData.food"
+						btn-radio="5">5</label>
+					<label class="btn btn-default" ng-model="scoreData.food"
+						btn-radio="4">4</label>
+					<label class="btn btn-default" ng-model="scoreData.food"
+						btn-radio="3">3</label>
+					<label class="btn btn-default" ng-model="scoreData.food"
+						btn-radio="2">2</label>
+					<label class="btn btn-default" ng-model="scoreData.food"
+						btn-radio="1">1</label>
+					<label class="btn btn-default" ng-model="scoreData.food"
+						btn-radio="0">Não</label>
+				</div>
+				<p>Alimentos tocando Vila</p>
+			</div>
+		</div>
+
+		<!-- Futebol -->
+		<div>
+			<h4>Futebol</h4>
+			<div class="row-fluid">
+				<div class="btn-group pull-right">
+					<label class="btn btn-default" ng-model="scoreData.goal"
+						btn-radio="1">Sim</label>
+					<label class="btn btn-default" ng-model="scoreData.goal"
+						btn-radio="0">Não</label>
+				</div>
+				<p>Bola tocou a rede</p>
+			</div>
+		</div>
+
+		<!-- Carregamento de peso -->
+		<div>
+			<h4>Carregamento de peso</h4>
+			<div class="row-fluid">
+				<div class="btn-group pull-right">
+					<label class="btn btn-default" ng-model="scoreData.weight"
+						btn-radio="1">Sim</label>
+					<label class="btn btn-default" ng-model="scoreData.weight"
+						btn-radio="0">Não</label>
+				</div>
+				<p>Peso na área demarcada</p>
+			</div>
+		</div>
+								<!-- Penalidades -->
+				<div style="margin-top: 6px; padding-top: 5px;">
+					<div class="row-fluid" style="margin-top: 15px;">
+						<div class="btn-group pull-right">
+							<label class="btn btn-default" ng-model="scoreData.penalties"
+								btn-radio="5">5</label>
+							<label class="btn btn-default" ng-model="scoreData.penalties"
+								btn-radio="4">4</label>
+							<label class="btn btn-default" ng-model="scoreData.penalties"
+								btn-radio="3">3</label>
+							<label class="btn btn-default" ng-model="scoreData.penalties"
+								btn-radio="2">2</label>
+							<label class="btn btn-default" ng-model="scoreData.penalties"
+								btn-radio="1">1</label>
+							<label class="btn btn-default" ng-model="scoreData.penalties"
+								btn-radio="0">0</label>
+						</div>
+						<h4>Penalidades</h4>
+					</div>
+				</div>
+				<!-- Lixo -->
+				<div style="margin-top: 6px; padding-top: 5px;" ng-hide= "scoreData.penalties == 0 && scoreData.trash == 0" >
+					<div class="row-fluid" style="margin-top: 15px;">
+						<div class="btn-group pull-right">
+							<label class="btn btn-default" ng-model="scoreData.trash"
+								btn-radio="5">5</label>
+							<label class="btn btn-default" ng-model="scoreData.trash"
+								btn-radio="4">4</label>
+							<label class="btn btn-default" ng-model="scoreData.trash"
+								btn-radio="3">3</label>
+							<label class="btn btn-default" ng-model="scoreData.trash"
+								btn-radio="2">2</label>
+							<label class="btn btn-default" ng-model="scoreData.trash"
+								btn-radio="1">1</label>
+							<label class="btn btn-default" ng-model="scoreData.trash"
+								btn-radio="0">0</label>
+						</div>
+						<h4>Lixos Coletados</h4>
+					</div>
+				</div>
+
+
+	</div>
+</div>

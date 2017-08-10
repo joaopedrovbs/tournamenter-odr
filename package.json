@@ -1,0 +1,78 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "https://github.com/joaopedrovbs/tournamenter-odr",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "https://github.com/joaopedrovbs/tournamenter-odr",
+        "spec": "git+https://github.com/joaopedrovbs/tournamenter-odr.git",
+        "type": "hosted",
+        "hosted": {
+          "type": "github",
+          "ssh": "git@github.com:joaopedrovbs/tournamenter-odr.git",
+          "sshUrl": "git+ssh://git@github.com/joaopedrovbs/tournamenter-odr.git",
+          "httpsUrl": "git+https://github.com/joaopedrovbs/tournamenter-odr.git",
+          "gitUrl": "git://github.com/joaopedrovbs/tournamenter-odr.git",
+          "shortcut": "github:joaopedrovbs/tournamenter-odr",
+          "directUrl": "https://raw.githubusercontent.com/joaopedrovbs/tournamenter-odr/master/package.json"
+        }
+      },
+      "C:\\Users\\joaop\\AppData\\Local\\tournamenter\\app-1.2.0"
+    ]
+  ],
+  "_from": "git+https://github.com/joaopedrovbs/tournamenter-odr.git",
+  "_id": "tournamenter-odr@1.0.0",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/tournamenter-odr",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "https://github.com/joaopedrovbs/tournamenter-odr",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "https://github.com/joaopedrovbs/tournamenter-odr",
+    "spec": "git+https://github.com/joaopedrovbs/tournamenter-odr.git",
+    "type": "hosted",
+    "hosted": {
+      "type": "github",
+      "ssh": "git@github.com:joaopedrovbs/tournamenter-odr.git",
+      "sshUrl": "git+ssh://git@github.com/joaopedrovbs/tournamenter-odr.git",
+      "httpsUrl": "git+https://github.com/joaopedrovbs/tournamenter-odr.git",
+      "gitUrl": "git://github.com/joaopedrovbs/tournamenter-odr.git",
+      "shortcut": "github:joaopedrovbs/tournamenter-odr",
+      "directUrl": "https://raw.githubusercontent.com/joaopedrovbs/tournamenter-odr/master/package.json"
+    }
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "git+https://github.com/joaopedrovbs/tournamenter-odr.git#390a2b405fc1bc834775f05307203da0085478e7",
+  "_shasum": "e2d24316afef766730d55a5c2a05abdd7dffcc6f",
+  "_shrinkwrap": null,
+  "_spec": "https://github.com/joaopedrovbs/tournamenter-odr",
+  "_where": "C:\\Users\\joaop\\AppData\\Local\\tournamenter\\app-1.2.0",
+  "author": "",
+  "dependencies": {
+    "bower": "^1.7.9",
+    "http-server": "^0.7.1",
+    "lodash": "^4.14.0"
+  },
+  "description": "Tournamenter scorer app for odr",
+  "devDependencies": {},
+  "gitHead": "390a2b405fc1bc834775f05307203da0085478e7",
+  "license": "ISC",
+  "main": "index.js",
+  "name": "tournamenter-odr",
+  "optionalDependencies": {},
+  "readme": "# tournamenter-odr\r\nExtensão para o Tournamenter que permite pontuar pelo tablet em competições da ODR\r\n\r\n## Instalação desta Extensão\r\n* Baixe o [Tournamenter App](https://github.com/ivanseidel/TournamenterApp) e instale\r\n* Instale este módulo no gerenciador de extensões do Tournamenter, incluindo a seguinte URL: `https://github.com/joaopedrovbs/tournamenter-odr`\r\n* Para cada instância de servidor que desejar utilizar, habilite o módulo\r\n",
+  "readmeFilename": "README.md",
+  "scripts": {
+    "postinstall": "bower install",
+    "start": "http-server public/tournamenter-odr",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.0.0"
+}
